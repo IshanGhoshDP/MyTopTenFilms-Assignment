@@ -1,0 +1,22 @@
+uuid: db86647d-32c8-4960-8be1-ca9349258224
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: news
+label: News
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  caf26dab-1278-4113-a911-50b3934e8347:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: caf26dab-1278-4113-a911-50b3934e8347
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: -5
+relationships: {  }

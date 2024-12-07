@@ -6,9 +6,9 @@ name: MyTopTenFilms
 mail: ishan@digitalpolygon.com
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /node/31
+  404: /node/30
+  front: /node/79
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

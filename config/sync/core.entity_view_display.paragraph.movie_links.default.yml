@@ -1,0 +1,66 @@
+uuid: 810385a0-ae95-4525-a737-4604fadbda25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movie_links.field_buy_on_dvd
+    - field.field.paragraph.movie_links.field_in_cinemas
+    - field.field.paragraph.movie_links.field_netflix
+    - field.field.paragraph.movie_links.field_trailers
+    - paragraphs.paragraphs_type.movie_links
+  module:
+    - link
+id: paragraph.movie_links.default
+targetEntityType: paragraph
+bundle: movie_links
+mode: default
+content:
+  field_buy_on_dvd:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_in_cinemas:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_netflix:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_trailers:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

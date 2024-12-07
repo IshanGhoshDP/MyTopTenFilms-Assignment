@@ -1,0 +1,23 @@
+uuid: 78f28992-9173-469f-ae23-87f38ad8e167
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.special_references.field_special_references
+    - paragraphs.paragraphs_type.special_references
+  module:
+    - viewsreference
+id: paragraph.special_references.default
+targetEntityType: paragraph
+bundle: special_references
+mode: default
+content:
+  field_special_references:
+    type: viewsreference_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
