@@ -1,0 +1,14 @@
+uuid: 9d700969-819c-4096-bf10-b98d0e1e9de9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.movie_reviewer
+  module:
+    - user
+id: user_remove_role_action.movie_reviewer
+label: 'Remove the Movie Reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: movie_reviewer

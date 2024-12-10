@@ -1,0 +1,23 @@
+uuid: d2051fe4-9eff-42bc-92b2-afaf5cdc2d5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.reviews
+  module:
+    - devel_generate
+    - node
+    - paragraphs_type_permissions
+id: movie_reviewer
+label: 'Movie Reviewer'
+weight: 4
+is_admin: null
+permissions:
+  - 'administer devel_generate'
+  - 'create reviews content'
+  - 'delete any reviews content'
+  - 'delete paragraph content movie_links'
+  - 'edit any reviews content'
+  - 'edit own reviews content'
+  - 'update paragraph content movie_links'
+  - 'view reviews revisions'

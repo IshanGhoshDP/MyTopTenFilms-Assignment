@@ -4,14 +4,18 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_all_links
     - field.storage.node.field_movie_poster
+    - field.storage.paragraph.field_buy_on_dvd
+    - field.storage.paragraph.field_in_cinemas
+    - field.storage.paragraph.field_netflix
+    - field.storage.paragraph.field_trailers
     - image.style.small_thumbnail_100_x_100
     - node.type.reviews
   module:
-    - entity_reference_revisions
     - image
+    - link
     - node
+    - paragraphs
     - text
     - user
 id: latest_reviews
@@ -41,21 +45,39 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
             word_boundary: false
             ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -86,7 +108,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -152,7 +174,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -206,16 +228,16 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_all_links:
-          id: field_all_links
-          table: node__field_all_links
-          field: field_all_links
-          relationship: none
+        field_buy_on_dvd:
+          id: field_buy_on_dvd
+          table: paragraph__field_buy_on_dvd
+          field: field_buy_on_dvd
+          relationship: field_all_links
           group_type: group
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -255,10 +277,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_revisions_entity_view
+          click_sort_column: uri
+          type: link
           settings:
-            view_mode: default
+            trim_length: 80
+            url_only: true
+            url_plain: true
+            rel: nofollow
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -269,6 +295,256 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_in_cinemas:
+          id: field_in_cinemas
+          table: paragraph__field_in_cinemas
+          field: field_in_cinemas
+          relationship: field_all_links
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: true
+            url_plain: true
+            rel: nofollow
+            target: _blank
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_netflix:
+          id: field_netflix
+          table: paragraph__field_netflix
+          field: field_netflix
+          relationship: field_all_links
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: true
+            url_plain: true
+            rel: nofollow
+            target: _blank
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_trailers:
+          id: field_trailers
+          table: paragraph__field_trailers
+          field: field_trailers
+          relationship: field_all_links
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: true
+            url_plain: true
+            rel: nofollow
+            target: _blank
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"card\">\r\n  <h3 class=\"card-title\">{{ title }}</h3>\r\n  <div class=\"card-content\">\r\n    <div class=\"card-content_image\">{{ field_movie_poster }}</div>\r\n    <div class=\"card-content_body\">{{ body }}</div>\r\n  </div>\r\n  <div class=\"card-links\">\r\n    <a href=\"{{ field_trailers }}\">Trailers</a><hr>\r\n    <a href=\"{{ field_in_cinemas }}\">In Cinemas</a><hr>\r\n    <a href=\"{{ field_buy_on_dvd }}\">Buy on DVD</a><hr>\r\n    <a href=\"{{ field_netflix }}\">NetFlix</a>\r\n  </div>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: some
         options:
@@ -343,7 +619,16 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        field_all_links:
+          id: field_all_links
+          table: node__field_all_links
+          field: field_all_links
+          relationship: none
+          group_type: group
+          admin_label: 'field_all_links: Paragraph'
+          plugin_id: standard
+          required: false
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -356,8 +641,11 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_all_links'
         - 'config:field.storage.node.field_movie_poster'
+        - 'config:field.storage.paragraph.field_buy_on_dvd'
+        - 'config:field.storage.paragraph.field_in_cinemas'
+        - 'config:field.storage.paragraph.field_netflix'
+        - 'config:field.storage.paragraph.field_trailers'
   block_1:
     id: block_1
     display_title: Block
@@ -374,5 +662,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_all_links'
         - 'config:field.storage.node.field_movie_poster'
+        - 'config:field.storage.paragraph.field_buy_on_dvd'
+        - 'config:field.storage.paragraph.field_in_cinemas'
+        - 'config:field.storage.paragraph.field_netflix'
+        - 'config:field.storage.paragraph.field_trailers'

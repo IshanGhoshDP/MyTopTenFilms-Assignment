@@ -38,3 +38,5 @@ hidden:
   field_movie_poster: true
   field_release_date: true
   field_review: true
+  langcode: true
+  search_api_excerpt: true

@@ -10,6 +10,7 @@ dependencies:
     - contact
     - file
     - filter
+    - paragraphs_type_permissions
     - search
     - shortcut
     - system
@@ -24,9 +25,14 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'change own username'
   - 'delete own files'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'use text format webform_default'
+  - 'view paragraph content block_reference'
+  - 'view paragraph content movie_links'
+  - 'view paragraph content special_references'

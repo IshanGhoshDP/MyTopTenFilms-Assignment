@@ -20,3 +20,5 @@ content:
     region: content
 hidden:
   field_special_references: true
+  langcode: true
+  search_api_excerpt: true

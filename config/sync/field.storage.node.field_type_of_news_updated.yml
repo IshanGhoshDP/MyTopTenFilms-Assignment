@@ -1,0 +1,20 @@
+uuid: 72f5b75b-f858-4b16-9daf-2a6b6a0d4e6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_type_of_news_updated
+field_name: field_type_of_news_updated
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
-    - field.field.node.news.field_type_of_news
+    - field.field.node.news.field_type_of_news_updated
     - node.type.news
   module:
     - path
@@ -30,11 +30,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_type_of_news:
-    type: options_select
-    weight: 122
+  field_type_of_news_updated:
+    type: options_buttons
+    weight: 123
     region: content
     settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path

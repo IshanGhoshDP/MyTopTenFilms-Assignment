@@ -1,0 +1,21 @@
+uuid: 8e5e4074-ef27-4ec5-bfde-94b124b84a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.my_favourite_british_films_made
+    - entityqueue.entity_queue.rec
+  module:
+    - devel_generate
+    - entityqueue
+id: list_curator
+label: 'List Curator'
+weight: 5
+is_admin: null
+permissions:
+  - 'administer devel_generate'
+  - 'administer entityqueue'
+  - 'manipulate all entityqueues'
+  - 'manipulate entityqueues'
+  - 'update my_favourite_british_films_made entityqueue'
+  - 'update rec entityqueue'
