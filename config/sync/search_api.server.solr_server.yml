@@ -1,0 +1,15 @@
+uuid: 11e728b3-e102-4f18-acd3-ebe51275538f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: solr_server
+name: 'Solr Server'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  phrase: bigram
