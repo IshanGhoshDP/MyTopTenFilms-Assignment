@@ -1,0 +1,19 @@
+uuid: d7cfcffa-4937-4abe-8733-a1a7cebd2809
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.search_revamp
+id: search_revamp
+label: Search
+path: search
+clean_url: true
+show_all_when_no_keys: false
+index: search_revamp
+limit: 10
+searched_fields:
+  body: body
+style: search_results
+view_mode_configuration: {  }
+show_search_form: true
+parse_mode: terms

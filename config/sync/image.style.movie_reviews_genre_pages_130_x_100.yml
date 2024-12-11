@@ -1,0 +1,15 @@
+uuid: 752b268f-337a-488a-850e-d27ee665a37f
+langcode: en
+status: true
+dependencies: {  }
+name: movie_reviews_genre_pages_130_x_100
+label: 'Movie Reviews Genre Pages (130 x 100)'
+effects:
+  f00523f2-0bd8-4a1c-8f2c-2c0393fa8145:
+    uuid: f00523f2-0bd8-4a1c-8f2c-2c0393fa8145
+    id: image_scale
+    weight: 1
+    data:
+      width: 130
+      height: 100
+      upscale: true

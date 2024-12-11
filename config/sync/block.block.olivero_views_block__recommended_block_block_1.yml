@@ -1,0 +1,29 @@
+uuid: 9be56b2a-499e-4910-b132-97b1cbda3113
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recommended_block
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__recommended_block_block_1
+theme: olivero
+region: social
+weight: 0
+provider: null
+plugin: 'views_block:recommended_block-block_1'
+settings:
+  id: 'views_block:recommended_block-block_1'
+  label: Recommended
+  label_display: visible
+  provider: views
+  views_label: Recommended
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/search/*\r\n/reviews/*"

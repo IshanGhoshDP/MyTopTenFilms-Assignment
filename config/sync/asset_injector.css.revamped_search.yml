@@ -1,0 +1,25 @@
+uuid: 0be2909e-e151-4344-91ba-0a7fab6d2a02
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: revamped_search
+label: 'Revamped Search'
+code: |-
+  .card {
+  	width: 100%;
+  }
+
+  .capitalized-header {
+  	text-transform: capitalize;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/revamped-search/*'
+contexts: {  }
+conditions_require_all: true

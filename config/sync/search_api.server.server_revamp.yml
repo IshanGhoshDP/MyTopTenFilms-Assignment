@@ -1,0 +1,15 @@
+uuid: 0294fbe9-a4ff-4c25-927d-fbf6a79ec55c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: server_revamp
+name: 'Server Revamp'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  phrase: bigram

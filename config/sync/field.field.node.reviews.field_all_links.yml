@@ -1,0 +1,31 @@
+uuid: 6f7a8e84-cb39-487e-90be-1bdf6b589a58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_all_links
+    - node.type.reviews
+    - paragraphs.paragraphs_type.movie_links
+  module:
+    - entity_reference_revisions
+id: node.reviews.field_all_links
+field_name: field_all_links
+entity_type: node
+bundle: reviews
+label: 'All Links'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      movie_links: movie_links
+    negate: 0
+    target_bundles_drag_drop:
+      movie_links:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

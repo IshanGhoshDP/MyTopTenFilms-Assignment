@@ -1,0 +1,26 @@
+uuid: 0f29dc1e-9c3d-47c4-9262-9b89a45eb722
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: rec
+label: Recommended
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      reviews: reviews
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 1
+  max_size: 4
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,15 @@
+uuid: 17bcc6e2-200f-4f9c-b67f-1f521471568f
+langcode: en
+status: true
+dependencies: {  }
+name: small_thumbnail_100_x_100
+label: 'Small Thumbnail (100 x 100)'
+effects:
+  7be1d47e-23f4-44a6-9412-1deda27f046f:
+    uuid: 7be1d47e-23f4-44a6-9412-1deda27f046f
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      upscale: true

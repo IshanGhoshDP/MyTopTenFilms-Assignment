@@ -1,0 +1,20 @@
+uuid: b17efd24-09c3-4081-8eaf-804d231188b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - devel_generate
+    - node
+id: journalist
+label: Journalist
+weight: 6
+is_admin: null
+permissions:
+  - 'administer devel_generate'
+  - 'create news content'
+  - 'delete any news content'
+  - 'edit any news content'
+  - 'edit own news content'
+  - 'view news revisions'

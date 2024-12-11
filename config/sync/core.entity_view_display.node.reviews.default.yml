@@ -1,0 +1,89 @@
+uuid: 5942c4f3-c7a0-480f-ab65-abad0a77a7c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reviews.body
+    - field.field.node.reviews.field_all_links
+    - field.field.node.reviews.field_genre
+    - field.field.node.reviews.field_movie_poster
+    - field.field.node.reviews.field_release_date
+    - field.field.node.reviews.field_review
+    - image.style.movies_nodes_300_x_200
+    - node.type.reviews
+  module:
+    - datetime
+    - entity_reference_revisions
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.reviews.default
+targetEntityType: node
+bundle: reviews
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_all_links:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_genre:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_movie_poster:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: movies_nodes_300_x_200
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_release_date:
+    type: datetime_custom
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: d/m/Y
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_review:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

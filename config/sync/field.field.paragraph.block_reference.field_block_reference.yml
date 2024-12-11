@@ -1,0 +1,26 @@
+uuid: e5f1d40c-c587-4686-ae50-0b8417faea0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_reference
+    - paragraphs.paragraphs_type.block_reference
+  module:
+    - block_field
+id: paragraph.block_reference.field_block_reference
+field_name: field_block_reference
+entity_type: paragraph
+bundle: block_reference
+label: 'Block Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'quicktabs_block:news': 'quicktabs_block:news'
+      'quicktabs_block:news_page_tabs': 'quicktabs_block:news_page_tabs'
+field_type: block_field

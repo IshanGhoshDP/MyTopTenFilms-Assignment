@@ -4,13 +4,23 @@ status: true
 dependencies:
   config:
     - node.type.article
+    - node.type.news
     - node.type.page
+    - node.type.reviews
+    - node.type.webform
+    - taxonomy.vocabulary.genre
     - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.type_of_news
   module:
     - comment
+    - contact
     - contextual
+    - devel_generate
     - file
+    - layout_builder
+    - menu_per_role
     - node
+    - paragraphs_type_permissions
     - path
     - system
     - taxonomy
@@ -27,21 +37,58 @@ permissions:
   - 'access contextual links'
   - 'access files overview'
   - 'access toolbar'
+  - 'administer contact forms'
+  - 'administer devel_generate'
+  - 'administer menu_per_role'
   - 'administer url aliases'
+  - 'configure any layout'
+  - 'create and edit custom blocks'
   - 'create article content'
+  - 'create news content'
   - 'create page content'
+  - 'create paragraph content block_reference'
+  - 'create paragraph content movie_links'
+  - 'create paragraph content special_references'
+  - 'create reviews content'
+  - 'create terms in genre'
   - 'create terms in tags'
+  - 'create terms in type_of_news'
   - 'create url aliases'
-  - 'delete article revisions'
+  - 'create webform content'
+  - 'delete any article content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any reviews content'
+  - 'delete any webform content'
   - 'delete own article content'
   - 'delete own files'
+  - 'delete own news content'
   - 'delete own page content'
-  - 'delete page revisions'
+  - 'delete own reviews content'
+  - 'delete own webform content'
+  - 'edit any article content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any reviews content'
   - 'edit own article content'
   - 'edit own comments'
+  - 'edit own news content'
   - 'edit own page content'
+  - 'edit own reviews content'
+  - 'edit own webform content'
+  - 'edit terms in genre'
   - 'edit terms in tags'
-  - 'revert all revisions'
+  - 'edit terms in type_of_news'
+  - 'update paragraph content block_reference'
+  - 'update paragraph content movie_links'
+  - 'update paragraph content special_references'
   - 'view all revisions'
+  - 'view all taxonomy revisions'
+  - 'view article revisions'
+  - 'view news revisions'
   - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view reviews revisions'
   - 'view the administration theme'
+  - 'view vocabulary labels'
+  - 'view webform revisions'

@@ -1,0 +1,10 @@
+uuid: 48594211-d8be-47ee-8db3-3afa3e1c5e3b
+langcode: en
+status: true
+dependencies: {  }
+id: special_references
+label: 'Special References'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

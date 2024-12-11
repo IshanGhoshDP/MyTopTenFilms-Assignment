@@ -1,0 +1,23 @@
+uuid: a3428750-2512-409a-9232-13b3f2297a4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_buy_on_dvd
+    - paragraphs.paragraphs_type.movie_links
+  module:
+    - link
+id: paragraph.movie_links.field_buy_on_dvd
+field_name: field_buy_on_dvd
+entity_type: paragraph
+bundle: movie_links
+label: 'Buy On DVD'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

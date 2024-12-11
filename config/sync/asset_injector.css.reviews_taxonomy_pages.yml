@@ -1,0 +1,26 @@
+uuid: 896092cc-4743-45bd-8805-9c4920917a18
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: reviews_taxonomy_pages
+label: 'Reviews Taxonomy Pages'
+code: |-
+  .card {
+  	box-shadow: none;
+    padding: 20px 0;
+  }
+
+  .views-element-container [data-once="ajax-pager"] .view-content .item-list > ul {
+  	list-style-type: none;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/reviews/*'
+contexts: {  }
+conditions_require_all: true

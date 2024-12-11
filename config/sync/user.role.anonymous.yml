@@ -7,7 +7,9 @@ dependencies:
   module:
     - comment
     - contact
+    - entityqueue
     - filter
+    - paragraphs_type_permissions
     - search
     - system
 _core:
@@ -20,5 +22,9 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'manipulate entityqueues'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view paragraph content block_reference'
+  - 'view paragraph content movie_links'
+  - 'view paragraph content special_references'

@@ -1,0 +1,14 @@
+uuid: a1078f8e-a004-4373-95ed-4148c1db9e97
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.journalist
+  module:
+    - user
+id: user_remove_role_action.journalist
+label: 'Remove the Journalist role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: journalist

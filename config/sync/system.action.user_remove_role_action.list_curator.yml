@@ -1,0 +1,14 @@
+uuid: 110b0761-2a84-4400-8199-a1b0d803ca07
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.list_curator
+  module:
+    - user
+id: user_remove_role_action.list_curator
+label: 'Remove the List Curator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: list_curator

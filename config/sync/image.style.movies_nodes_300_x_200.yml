@@ -1,0 +1,15 @@
+uuid: 40b1fa8f-e6fd-4505-850b-633c93afb041
+langcode: en
+status: true
+dependencies: {  }
+name: movies_nodes_300_x_200
+label: 'Movies Nodes (300 x 200)'
+effects:
+  bd1d8090-61e6-49d6-8350-3e665a3e7308:
+    uuid: bd1d8090-61e6-49d6-8350-3e665a3e7308
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      upscale: true

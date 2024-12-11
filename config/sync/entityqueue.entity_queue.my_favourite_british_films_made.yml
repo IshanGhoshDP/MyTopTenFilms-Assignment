@@ -1,0 +1,26 @@
+uuid: 10161107-0c84-4995-82de-ea466b10a4b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: my_favourite_british_films_made
+label: 'My Favourite British Films Made By Some Author'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      reviews: reviews
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false
