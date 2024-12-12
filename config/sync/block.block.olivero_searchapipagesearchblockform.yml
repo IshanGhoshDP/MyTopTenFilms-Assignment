@@ -1,0 +1,28 @@
+uuid: 04f02f80-9569-40b0-9bbc-94eeb37fe3cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api_page.search_api_page.search_revamp
+  module:
+    - search_api_page
+    - system
+  theme:
+    - olivero
+id: olivero_searchapipagesearchblockform
+theme: olivero
+region: primary_menu
+weight: 0
+provider: null
+plugin: search_api_page_form_block
+settings:
+  id: search_api_page_form_block
+  label: 'Search Api Page search block form'
+  label_display: '0'
+  provider: search_api_page
+  search_api_page: search_revamp
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search\r\n/search/*"
