@@ -1,0 +1,11 @@
+uuid: cf283ff2-1527-4512-a74d-108859ec7a74
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.special_vocab
+id: taxonomy_term.special_vocab
+target_entity_type_id: taxonomy_term
+target_bundle: special_vocab
+default_langcode: site_default
+language_alterable: false

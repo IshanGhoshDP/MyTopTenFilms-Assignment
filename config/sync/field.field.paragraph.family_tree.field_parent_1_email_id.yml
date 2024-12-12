@@ -1,0 +1,19 @@
+uuid: b05c0d0c-8c16-431c-98f0-f540d7e8f497
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parent_1_email_id
+    - paragraphs.paragraphs_type.family_tree
+id: paragraph.family_tree.field_parent_1_email_id
+field_name: field_parent_1_email_id
+entity_type: paragraph
+bundle: family_tree
+label: "Mother's Email ID"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

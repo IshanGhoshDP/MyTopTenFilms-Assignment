@@ -1,0 +1,19 @@
+uuid: 6eb99172-6131-442b-b1d0-0fe2f2c2c5f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parent_email_id
+    - paragraphs.paragraphs_type.family_tree
+id: paragraph.family_tree.field_parent_email_id
+field_name: field_parent_email_id
+entity_type: paragraph
+bundle: family_tree
+label: "Father's Email ID"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

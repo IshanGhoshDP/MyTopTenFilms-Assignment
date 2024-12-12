@@ -1,0 +1,84 @@
+uuid: 29b72e9b-a230-4780-a3a7-9394d82cabda
+langcode: en
+status: true
+dependencies: {  }
+id: speci
+label: 'Special QuickTabs'
+renderer: quick_tabs
+hide_empty_tabs: false
+default_tab: 9999
+options:
+  quick_tabs:
+    ajax: false
+    class: ''
+    style: tabsbar
+configuration_data:
+  -
+    title: SPA
+    weight: 0
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      qtabs_content:
+        options:
+          machine_name: news
+      block_content:
+        options:
+          bid: 'views_block:special_blocks-block_1'
+          block_title: ''
+          display_title: false
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+  -
+    title: SPB
+    weight: 0
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      qtabs_content:
+        options:
+          machine_name: news
+      block_content:
+        options:
+          bid: 'views_block:special_blocks-block_2'
+          block_title: ''
+          display_title: false
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+  -
+    title: SPC
+    weight: 0
+    type: block_content
+    content:
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      qtabs_content:
+        options:
+          machine_name: news
+      block_content:
+        options:
+          bid: 'views_block:special_blocks-block_3'
+          block_title: ''
+          display_title: false
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''

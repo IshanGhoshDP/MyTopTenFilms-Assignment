@@ -1,0 +1,129 @@
+uuid: 037f7cb3-0a8f-4cdf-b985-b807edf3b26e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.family_tree.field_mother_s_photo
+    - field.field.paragraph.family_tree.field_parent_1_email_id
+    - field.field.paragraph.family_tree.field_parent_1_name
+    - field.field.paragraph.family_tree.field_parent_1_phone_number
+    - field.field.paragraph.family_tree.field_parent_email_id
+    - field.field.paragraph.family_tree.field_parent_name
+    - field.field.paragraph.family_tree.field_parent_phone_number
+    - field.field.paragraph.family_tree.field_parent_photo
+    - field.field.paragraph.family_tree.layout_builder__layout
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.family_tree
+  module:
+    - field_group
+    - image
+    - telephone
+third_party_settings:
+  field_group:
+    group_father_s_details:
+      children:
+        - field_parent_name
+        - field_parent_photo
+        - field_parent_phone_number
+        - field_parent_email_id
+      label: "Father's Details"
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_mother_s_details:
+      children:
+        - field_parent_1_name
+        - field_mother_s_photo
+        - field_parent_1_phone_number
+        - field_parent_1_email_id
+      label: "Mother's Details"
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+id: paragraph.family_tree.default
+targetEntityType: paragraph
+bundle: family_tree
+mode: default
+content:
+  field_mother_s_photo:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_parent_1_email_id:
+    type: email_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_parent_1_name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_parent_1_phone_number:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_parent_email_id:
+    type: email_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_parent_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_parent_phone_number:
+    type: telephone_default
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_parent_photo:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  layout_builder__layout: true
+  status: true
