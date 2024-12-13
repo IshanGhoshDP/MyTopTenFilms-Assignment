@@ -1,0 +1,10 @@
+uuid: 1fa68819-95af-4839-b90d-4db26808d904
+langcode: en
+status: true
+dependencies: {  }
+id: family_tree
+label: 'Family Tree'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: efbd9736-a128-4e79-953e-a80b6dd17b3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.special_paragraphs_testing
+  module:
+    - text
+id: node.special_paragraphs_testing.body
+field_name: body
+entity_type: node
+bundle: special_paragraphs_testing
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

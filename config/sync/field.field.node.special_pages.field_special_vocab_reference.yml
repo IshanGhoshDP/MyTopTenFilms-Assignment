@@ -1,0 +1,29 @@
+uuid: a67bd529-cf03-46d5-a878-00cac612b1a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_vocab_reference
+    - node.type.special_pages
+    - taxonomy.vocabulary.special_vocab
+id: node.special_pages.field_special_vocab_reference
+field_name: field_special_vocab_reference
+entity_type: node
+bundle: special_pages
+label: 'Special Vocab Reference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      special_vocab: special_vocab
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

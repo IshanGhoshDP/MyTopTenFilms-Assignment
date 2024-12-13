@@ -1,0 +1,19 @@
+uuid: c4f23bb0-997b-4802-898a-67e540097071
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_id
+    - node.type.special_paragraphs_testing
+id: node.special_paragraphs_testing.field_email_id
+field_name: field_email_id
+entity_type: node
+bundle: special_paragraphs_testing
+label: 'Email ID'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

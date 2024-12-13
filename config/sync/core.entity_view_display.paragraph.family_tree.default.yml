@@ -1,0 +1,279 @@
+uuid: fdd837b0-0c2e-48e2-b4bd-c7c95a3a56e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.family_tree.field_mother_s_photo
+    - field.field.paragraph.family_tree.field_parent_1_email_id
+    - field.field.paragraph.family_tree.field_parent_1_name
+    - field.field.paragraph.family_tree.field_parent_1_phone_number
+    - field.field.paragraph.family_tree.field_parent_email_id
+    - field.field.paragraph.family_tree.field_parent_name
+    - field.field.paragraph.family_tree.field_parent_phone_number
+    - field.field.paragraph.family_tree.field_parent_photo
+    - field.field.paragraph.family_tree.layout_builder__layout
+    - paragraphs.paragraphs_type.family_tree
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - system
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: "Parent's Details"
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          df005e49-0655-467c-8852-28148e5d5e68:
+            uuid: df005e49-0655-467c-8852-28148e5d5e68
+            region: first
+            configuration:
+              id: 'field_block:paragraph:family_tree:field_parent_photo'
+              label: "Father's Photo"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: small_thumbnail_100_x_100
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7da97a6b-dd46-4d59-a7f2-0212010ce87c:
+            uuid: 7da97a6b-dd46-4d59-a7f2-0212010ce87c
+            region: first
+            configuration:
+              id: 'field_block:paragraph:family_tree:field_parent_name'
+              label: "Father's Name"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4bfa682a-5211-4be5-8b2f-aed3616c2775:
+            uuid: 4bfa682a-5211-4be5-8b2f-aed3616c2775
+            region: first
+            configuration:
+              id: 'field_block:paragraph:family_tree:field_parent_phone_number'
+              label: "Father's Phone Number"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: telephone_link
+                label: inline
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          c686b8bc-7a91-40ce-8d94-7a35ded0838d:
+            uuid: c686b8bc-7a91-40ce-8d94-7a35ded0838d
+            region: first
+            configuration:
+              id: 'field_block:paragraph:family_tree:field_parent_email_id'
+              label: "Father's Email ID"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          8d5978ed-2f92-47e7-be5c-7d6d7b872114:
+            uuid: 8d5978ed-2f92-47e7-be5c-7d6d7b872114
+            region: second
+            configuration:
+              id: 'field_block:paragraph:family_tree:field_mother_s_photo'
+              label: "Mother's Photo"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: small_thumbnail_100_x_100
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e7b4bdc1-e45e-4a4f-b014-e30351abc044:
+            uuid: e7b4bdc1-e45e-4a4f-b014-e30351abc044
+            region: second
+            configuration:
+              id: 'field_block:paragraph:family_tree:field_parent_1_name'
+              label: "Mother's Name"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          c555ed9f-916c-4464-bc8f-39c997f6966e:
+            uuid: c555ed9f-916c-4464-bc8f-39c997f6966e
+            region: second
+            configuration:
+              id: 'field_block:paragraph:family_tree:field_parent_1_phone_number'
+              label: "Mother's Phone Number"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: telephone_link
+                label: inline
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          dc3cf5af-85dd-48a0-b390-f5eb845fb69d:
+            uuid: dc3cf5af-85dd-48a0-b390-f5eb845fb69d
+            region: second
+            configuration:
+              id: 'field_block:paragraph:family_tree:field_parent_1_email_id'
+              label: "Mother's Email ID"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Bottom Part'
+          context_mapping: {  }
+        components:
+          f5a8d25c-89d5-4959-931c-bffa89df29d9:
+            uuid: f5a8d25c-89d5-4959-931c-bffa89df29d9
+            region: content
+            configuration:
+              id: system_powered_by_block
+              label: 'Nicely Done IG'
+              label_display: visible
+              provider: system
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.family_tree.default
+targetEntityType: paragraph
+bundle: family_tree
+mode: default
+content:
+  field_mother_s_photo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_parent_1_email_id:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_parent_1_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_parent_1_phone_number:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_parent_email_id:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_parent_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_parent_phone_number:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_parent_photo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  layout_builder__layout: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: b5a00361-b8de-4bfa-82bc-3e7782b72aa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dob
+    - node.type.special_paragraphs_testing
+  module:
+    - datetime
+id: node.special_paragraphs_testing.field_dob
+field_name: field_dob
+entity_type: node
+bundle: special_paragraphs_testing
+label: DOB
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

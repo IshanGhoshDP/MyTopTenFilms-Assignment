@@ -1,0 +1,17 @@
+uuid: 94e56683-48f5-485a-b8b7-725ac688dfeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Special Paragraphs Testing'
+type: special_paragraphs_testing
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

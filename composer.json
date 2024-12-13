@@ -26,6 +26,7 @@
         "drupal/devel": "^5.0",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/entityqueue": "^1.9",
+        "drupal/field_group": "^3.6",
         "drupal/gin": "^3.0@RC",
         "drupal/hosted_solr": "^1.1",
         "drupal/menu_per_role": "^1.8",

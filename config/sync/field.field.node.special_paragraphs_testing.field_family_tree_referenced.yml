@@ -1,0 +1,40 @@
+uuid: a8d51bbb-0502-49ed-b520-cbf5e663f977
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_family_tree_referenced
+    - node.type.special_paragraphs_testing
+    - paragraphs.paragraphs_type.family_tree
+  module:
+    - entity_reference_revisions
+id: node.special_paragraphs_testing.field_family_tree_referenced
+field_name: field_family_tree_referenced
+entity_type: node
+bundle: special_paragraphs_testing
+label: 'Family Tree Referenced'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      family_tree: family_tree
+    negate: 0
+    target_bundles_drag_drop:
+      block_reference:
+        weight: 5
+        enabled: false
+      family_tree:
+        weight: 6
+        enabled: true
+      movie_links:
+        weight: 7
+        enabled: false
+      special_references:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,39 @@
+uuid: a440c8c7-8c6f-4ad3-8019-7f75fc549157
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.special_pages.body
+    - field.field.node.special_pages.field_special_vocab_reference
+    - node.type.special_pages
+  module:
+    - text
+    - user
+id: node.special_pages.default
+targetEntityType: node
+bundle: special_pages
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_special_vocab_reference:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

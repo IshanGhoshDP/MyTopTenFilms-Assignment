@@ -1,0 +1,21 @@
+uuid: f5ce577b-e928-46f3-a2be-0303e21348ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parent_1_phone_number
+    - paragraphs.paragraphs_type.family_tree
+  module:
+    - telephone
+id: paragraph.family_tree.field_parent_1_phone_number
+field_name: field_parent_1_phone_number
+entity_type: paragraph
+bundle: family_tree
+label: "Mother's Phone Number"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

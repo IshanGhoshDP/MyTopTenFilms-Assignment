@@ -1,0 +1,11 @@
+uuid: 3a699f6a-9644-4cb8-ba41-9b72f9ce3e1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.special_paragraphs_testing
+id: node.special_paragraphs_testing
+target_entity_type_id: node
+target_bundle: special_paragraphs_testing
+default_langcode: site_default
+language_alterable: false

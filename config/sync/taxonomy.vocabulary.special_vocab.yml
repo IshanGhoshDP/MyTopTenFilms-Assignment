@@ -1,0 +1,9 @@
+uuid: 18bb38d8-155e-4f76-aa1b-1e374c91a154
+langcode: en
+status: true
+dependencies: {  }
+name: 'Special Vocab'
+vid: special_vocab
+description: null
+weight: 0
+new_revision: false
